@@ -1,0 +1,11 @@
+# Print the sum of a sequence of
+# numbers from the user. 0 marks
+# the end of the sequence.
+#
+sum = 0 ;
+x = in ;
+while x do
+   sum = sum + x ;
+   x = in ;
+od
+out = sum ;

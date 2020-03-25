@@ -1,0 +1,27 @@
+# Lovingly crafted by robots
+# 2018-05-24 10:13:01.543036 from programs/fact.awl
+#
+	LOAD r1,r0,r0[510]
+ STORE r1,r0,r15[18]  # Access variable 'x_1'
+ LOAD r1,r0,r15[19]  # Access variable 'const1_3'
+ STORE r1,r0,r15[17]  # Access variable 'fact_2'
+loop_4:  #While loop
+ LOAD r2,r0,r15[15]  # Access variable 'x_1'
+	SUB  r0,r2,r0
+   ADD/Z  r15,r0,r15[10] #Jump to endloop_5
+ LOAD r1,r0,r15[13]  # Access variable 'fact_2'
+ LOAD r2,r0,r15[11]  # Access variable 'x_1'
+	MUL  r1,r1,r2
+ STORE r1,r0,r15[10]  # Access variable 'fact_2'
+ LOAD r1,r0,r15[8]  # Access variable 'x_1'
+ LOAD r2,r0,r15[9]  # Access variable 'const1_3'
+	SUB  r1,r1,r2
+ STORE r1,r0,r15[5]  # Access variable 'x_1'
+   ADD  r15,r0,r15[-11] #Jump to loop_4
+endloop_5:
+ LOAD r1,r0,r15[4]  # Access variable 'fact_2'
+	STORE  r1,r0,r0[511]
+	HALT  r0,r0,r0
+x_1: DATA 0 #x
+fact_2: DATA 0 #fact
+const1_3:  DATA 1

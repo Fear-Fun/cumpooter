@@ -1,0 +1,13 @@
+#
+# Sample Duck Machine higher level language code
+# for testing the compiler.  Does nothing useful or
+# interesting (yet) except test the parser.
+#
+ if 24 - 3 then
+      x = 17 + y ;
+      y = 34 * x + 4 ;
+ fi
+ while 14 do
+    x = 21 ;
+    z = ( 5 + 3 ) * 4 ;
+  od

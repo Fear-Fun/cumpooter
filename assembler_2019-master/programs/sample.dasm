@@ -1,0 +1,32 @@
+# Lovingly crafted by robots
+ LOAD r1,r0,r15[25]  # Access variable 'const5_2'
+ LOAD r2,r0,r15[25]  # Access variable 'const3_3'
+   ADD  r1,r1,r2
+ STORE r1,r0,r15[20]  # Access variable 'x_1'
+ LOAD r1,r0,r15[23]  # Access variable 'const4_5'
+ LOAD r2,r0,r15[18]  # Access variable 'x_1'
+   MUL  r1,r1,r2
+ STORE r1,r0,r15[17]  # Access variable 'y_4'
+loop_6:  #While loop
+ LOAD r1,r0,r15[15]  # Access variable 'x_1'
+  SUB  r0,r1,r0
+   ADD/Z  r15,r0,r15[10] #Jump to endloop_7
+ LOAD r1,r0,r15[12]  # Access variable 'x_1'
+ LOAD r2,r0,r15[16]  # Access variable 'const1_8'
+   SUB  r1,r1,r2
+ STORE r1,r0,r15[9]  # Access variable 'x_1'
+ LOAD r1,r0,r15[9]  # Access variable 'y_4'
+ LOAD r2,r0,r15[12]  # Access variable 'const1_8'
+   ADD  r1,r1,r2
+ STORE r1,r0,r15[6]  # Access variable 'y_4'
+   ADD  r15,r0,r15[-11] #Jump to loop_6
+endloop_7:
+ LOAD r1,r0,r15[4]  # Access variable 'y_4'
+STORE r1,r0,r0[511] # Print
+  HALT  r0,r0,r0
+x_1: DATA 0 #x
+y_4: DATA 0 #y
+const5_2:  DATA 5
+const3_3:  DATA 3
+const4_5:  DATA 4
+const1_8:  DATA 1
